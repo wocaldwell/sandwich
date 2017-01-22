@@ -11,7 +11,7 @@ var proteinChooser = document.getElementById("protein-chooser");
   A <select> element broadcasts a change event, so you listen for it
   and get the value of the topping from your augmented IIFE
 */
-meatChooser.addEventListener("change", function(event) {
+proteinChooser.addEventListener("change", function(event) {
   // Get the value chosen from the DOM
   selectedTopping = event.target.value;
 
