@@ -6,6 +6,66 @@
     <title>Sandwich Maker</title>
 </head>
 <body>
-    <script type="text/javascript" src="javascripts/SandwichMaker"></script>
+    <form id="sandwichForm">
+        <h1>Make Your Own Sandwich</h1>
+        <fieldset id="bread-chooser">
+            <legend>Bread</legend>
+            <input type="radio" name="bread" />Whole-Wheat
+            <input type="radio" name="bread" />Hoagie
+            <input type="radio" name="bread" />Rye
+            <input type="radio" name="bread" />Sourdough
+            <input type="radio" name="bread" />Bagel
+            <input type="radio" name="bread" />Put Mine in a Bowl
+        </fieldset>
+        <fieldset id="protein-chooser">
+            <legend>Protein</legend>
+            <input type="checkbox" />Tofu
+            <input type="checkbox" />Shredded Seitain
+            <input type="checkbox" />Tempeh
+            <input type="checkbox" />Portabella Mushroom
+            <input type="checkbox" />Black-bean Patty
+            <input type="checkbox" />No Protein
+        </fieldset>
+        <fieldset id="cheeze-chooser">
+            <legend>Cheeze</legend>
+            <input type="checkbox" />Daiya Mild Cheddar
+            <input type="checkbox" />Daiya Mozzarella
+            <input type="checkbox" />Almond Feta
+            <input type="checkbox" />Cashew Nacho Sauce
+            <input type="checkbox" />No Cheeze
+        </fieldset>
+        <fieldset id="condiment-chooser">
+            <legend>Condiments</legend>
+            <input type="checkbox" />Veganaise
+            <input type="checkbox" />Spicy Mustard
+            <input type="checkbox" />Louisiana Hot Sauce
+            <input type="checkbox" />Malt Vinegar
+            <input type="checkbox" />No Condiments
+        </fieldset>
+        <fieldset id="veg-chooser">
+            <legend>Veg</legend>
+            <input type="checkbox" />Lettuce
+            <input type="checkbox" />Tomato
+            <input type="checkbox" />Pickle
+            <input type="checkbox" />Avacado
+            <input type="checkbox" />Bell Pepper
+            <input type="checkbox" />Jalapeno
+            <input type="checkbox" />Mushroom
+            <input type="checkbox" />Spouts
+            <input type="checkbox" />Basil
+            <input type="checkbox" />Cucumber
+            <input type="checkbox" />Onion
+            <input type="checkbox" />No Veg
+        </fieldset>
+        <button type="button" id="makeButton">Make Sandwich!</button>
+    </form>
+    <div id="finishedSandwich"></div>
+    <script type="text/javascript" src="javascripts/SandwichMaker.js"></script>
+    <script type="text/javascript" src="javascripts/Bread.js"></script>
+    <script type="text/javascript" src="javascripts/Protein.js"></script>
+    <script type="text/javascript" src="javascripts/Cheeze.js"></script>
+    <script type="text/javascript" src="javascripts/Condiments.js"></script>
+    <script type="text/javascript" src="javascripts/Veg.js"></script>
+    <script type="text/javascript" src="javascripts/DOMHandler.js"></script>
 </body>
 </html>
