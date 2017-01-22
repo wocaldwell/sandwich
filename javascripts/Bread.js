@@ -1,11 +1,11 @@
 // This SandwichMaker IIFE augments the original one
-var SandwichProtein = (function(SandwichMaker) {
+var SandwichBread = (function(SandwichMaker) {
 
-  // Private variable to store the different protein prices
-  var proteinPrices;
+  // Private variable to store the different Bread prices
+  var breadPrices;
 
   // Augment the original object with another method
-  SandwichMaker.addProtein = function() {
+  SandwichMaker.addBread = function() {
     return ???;
   };
 
