@@ -1,4 +1,4 @@
-var SandwichMaker = (function() {
+var SandwichMaker = (function(SandwichMaker) {
 
   // Private variable to store the price
   var totalPrice = 0;
@@ -9,4 +9,5 @@ var SandwichMaker = (function() {
       totalPrice += toppingPrice;
     }
   };
-})();
+  return SandwichMaker;
+})(SandwichMaker || {});
