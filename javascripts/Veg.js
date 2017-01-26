@@ -1,5 +1,5 @@
 // This SandwichMaker IIFE augments the original one
-var SandwichVeg = (function(SandwichMaker) {
+var SandwichMaker = (function(SandwichMaker) {
 
   // Private variable to store the different Veg prices
   var vegPrices = {
@@ -24,4 +24,4 @@ var SandwichVeg = (function(SandwichMaker) {
 
   // Return the new, augmented object with the new method on it
   return SandwichMaker;
-})(SandwichMaker);
+})(SandwichMaker || {});
