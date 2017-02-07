@@ -1,5 +1,4 @@
-// This SandwichMaker IIFE augments the original one
-var SandwichMaker = (function(SandwichMaker) {
+"use strict";
 
   // Private variable to store the different Veg prices
   var vegPrices = {
@@ -17,11 +16,9 @@ var SandwichMaker = (function(SandwichMaker) {
     none: 0
   };
 
-  // Augment the original object with another method
-  SandwichMaker.addVeg = function(vegPick) {
+  // return the price of the selected ingredient
+  var addVeg = function(vegPick) {
     return vegPrices[vegPick];
   };
 
-  // Return the new, augmented object with the new method on it
-  return SandwichMaker;
-})(SandwichMaker || {});
+module.exports = {addVeg};

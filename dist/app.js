@@ -1,3 +1,63 @@
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+"use strict";
+
+
+
+// variable to store the different Bread prices
+var breadPrices = {
+  wheat: 0.99,
+  hoagie: 0.99,
+  rye: 1.09,
+  sourdough: 1.09,
+  bagel: 0.99,
+  bowl: 0
+};
+
+// add the bread price
+var addBread = function(breadPick) {
+  return breadPrices[breadPick];
+};
+
+module.exports = {addBread};
+},{}],2:[function(require,module,exports){
+"use strict";
+
+  // variable to store the different Cheeze prices
+  var cheezePrices = {
+    cheddar: 0.69,
+    mozzarella: 0.69,
+    feta: 0.49,
+    nacho: 0.49,
+    none: 0
+  };
+
+  // return the price of the selected ingredient
+  var addCheeze = function(cheezePick) {
+    return cheezePrices[cheezePick];
+  };
+
+  module.exports = {addCheeze};
+
+},{}],3:[function(require,module,exports){
+"use strict";
+
+  // variable to store the different Condiment prices
+  var condimentPrices = {
+    veganaise: 0.49,
+    mustard: 0.29,
+    louisiana: 0.29,
+    vinegar: 0.29,
+    none: 0
+  };
+
+  // return the price of the selected ingredient
+  var addCondiment = function(condimentPick) {
+    return condimentPrices[condimentPick];
+  };
+
+module.exports = {addCondiment};
+
+},{}],4:[function(require,module,exports){
 "use strict";
 
 // Variables that "link" to the other js files
@@ -128,3 +188,51 @@ function displaySandwich() {
 
 
 
+
+},{"./Bread.js":1,"./Cheeze.js":2,"./Condiments.js":3,"./Protein.js":5,"./Veg.js":6}],5:[function(require,module,exports){
+"use strict";
+
+  // variable to store the different protein prices
+  var proteinPrices = {
+    tofu: 1.99,
+    seitan: 1.99,
+    tempeh: 1.99,
+    mushroom: 1.49,
+    blackbean: 1.49,
+    none: 0
+  };
+
+  // return the price of the selected ingredient
+  var addProtein = function(sandwichName) {
+    return proteinPrices[sandwichName];
+  };
+
+module.exports = {addProtein};
+
+},{}],6:[function(require,module,exports){
+"use strict";
+
+  // Private variable to store the different Veg prices
+  var vegPrices = {
+    lettuce: 0,
+    tomato: 0,
+    pickle: 0,
+    avacado: 0.19,
+    pepper: 0.19,
+    jalapeno: 0.19,
+    mushroom: 0.19,
+    sprouts: 0.19,
+    basil: 0.19,
+    cucumber: 0.19,
+    onion: 0.19,
+    none: 0
+  };
+
+  // return the price of the selected ingredient
+  var addVeg = function(vegPick) {
+    return vegPrices[vegPick];
+  };
+
+module.exports = {addVeg};
+
+},{}]},{},[4]);
