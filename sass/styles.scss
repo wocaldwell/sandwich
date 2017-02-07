@@ -1,0 +1,20 @@
+* {
+    text-align: center;
+}
+
+input {
+    padding: 1em;
+}
+
+fieldset {
+    width: 80%;
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: auto !important;
+}
+
+legend {
+    width: auto;
+    padding: 0 10px;
+    border-bottom: none;
+}
